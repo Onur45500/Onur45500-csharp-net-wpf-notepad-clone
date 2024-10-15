@@ -17,9 +17,11 @@
         </Grid.RowDefinitions>
 
         <!-- Header -->
-
+        <Rectangle Fill="{StaticResource HeaderFooter}"/>
         <!-- Body -->
-
+        <Rectangle Grid.Row="1" Fill="{StaticResource Body}"/>
         <!-- Footer -->
+        <Rectangle Grid.Row="2" Fill="{StaticResource HeaderFooter}"/>
+
     </Grid>
 </Window>

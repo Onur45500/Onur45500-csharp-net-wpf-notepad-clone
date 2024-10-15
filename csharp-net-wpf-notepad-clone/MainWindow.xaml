@@ -83,6 +83,27 @@
         
         <!-- Footer -->
         <Rectangle Grid.Row="2" Fill="{StaticResource HeaderFooter}"/>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
 
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10, 0">
+                <TextBlock x:Name="LineCountText" Text="0" Margin="0, 0, 10, 0"/>
+                <TextBlock x:Name="ColumnCountText" Text="0" Margin="0, 0, 10, 0"/>
+            </StackPanel>
+
+            <Rectangle Grid.Column="1" Width="1" Fill="#FF737373" HorizontalAlignment="Left" Margin="10, 0"></Rectangle>
+            <TextBlock Grid.Column="1" x:Name="Zoom" Text="100%" HorizontalAlignment="Center" Margin="0, 0, 10, 0"/>
+
+            <Rectangle Grid.Column="2" Width="1" Fill="#FF737373" HorizontalAlignment="Left" Margin="10, 0"></Rectangle>
+            <TextBlock Grid.Column="2" Text="Windows (CRLF)" HorizontalAlignment="Center" Margin="0, 0, 10, 0"/>
+
+            <Rectangle Grid.Column="3" Width="1" Fill="#FF737373" HorizontalAlignment="Left" Margin="10, 0"></Rectangle>
+            <TextBlock Grid.Column="3" Text="UTF-8" HorizontalAlignment="Center" Margin="0, 0, 10, 0"/>
+        </Grid>
     </Grid>
 </Window>

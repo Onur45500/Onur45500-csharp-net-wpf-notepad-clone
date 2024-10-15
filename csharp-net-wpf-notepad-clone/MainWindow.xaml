@@ -18,6 +18,12 @@
 
         <!-- Header -->
         <Rectangle Fill="{StaticResource HeaderFooter}"/>
+        <!-- Menu -->
+        <Menu Background="Transparent" VerticalAlignment="Center" Foreground="{StaticResource HeaderFooterText}">
+            <MenuItem Header="File" Background="{StaticResource HeaderFooter}">
+                <MenuItem Header="Exit"></MenuItem>
+            </MenuItem>
+        </Menu>
         <!-- Body -->
         <Rectangle Grid.Row="1" Fill="{StaticResource Body}"/>
         <!-- Footer -->

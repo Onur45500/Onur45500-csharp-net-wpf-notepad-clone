@@ -29,6 +29,7 @@
                 <MenuItem Header="Open" InputGestureText="Ctrl+O"></MenuItem>
                 <MenuItem Header="Save" InputGestureText="Ctrl+S"></MenuItem>
                 <MenuItem Header="Save as" InputGestureText="Ctrl+Shift+S"></MenuItem>
+                <Separator/>
                 <MenuItem Header="Page setup"></MenuItem>
                 <MenuItem Header="Print" InputGestureText="Ctrl+P"></MenuItem>
                 <MenuItem Header="Exit"></MenuItem>
@@ -37,28 +38,33 @@
             <MenuItem Header="Edit"
           Background="{StaticResource HeaderFooter}">
                 <MenuItem Header="Undo" InputGestureText="Ctrl+Z"></MenuItem>
+                <Separator/>
                 <MenuItem Header="Cut" InputGestureText="Ctrl+X"></MenuItem>
                 <MenuItem Header="Copy" InputGestureText="Ctrl+C"></MenuItem>
                 <MenuItem Header="Paste" InputGestureText="Ctrl+V"></MenuItem>
                 <MenuItem Header="Delete" InputGestureText="Del"></MenuItem>
+                <Separator/>
                 <MenuItem Header="Find" InputGestureText="Ctrl+F"></MenuItem>
                 <MenuItem Header="Find next" InputGestureText="F3"></MenuItem>
                 <MenuItem Header="Find previous" InputGestureText="Shift+F3"></MenuItem>
                 <MenuItem Header="Replace" InputGestureText="Ctrl+H"></MenuItem>
                 <MenuItem Header="Go to" InputGestureText="Ctrl+G"></MenuItem>
+                <Separator/>
                 <MenuItem Header="Select all" InputGestureText="Ctrl+A"></MenuItem>
                 <MenuItem Header="Time/Date" InputGestureText="F5"></MenuItem>
+                <Separator/>
                 <MenuItem Header="Font"></MenuItem>
             </MenuItem>
 
             <MenuItem Header="View"
             Background="{StaticResource HeaderFooter}">
                 <MenuItem Header="Zoom">
-                    <MenuItem Header="Zoom+"></MenuItem>
-                    <MenuItem Header="Zoom-"></MenuItem>
+                    <MenuItem Header="Zoom in" InputGestureText="CTRL+Plus"></MenuItem>
+                    <MenuItem Header="Zoom out" InputGestureText="CTRL+Minus"></MenuItem>
+                    <MenuItem Header="Restaure default zoom" InputGestureText="CTRL+0"></MenuItem>
                 </MenuItem>
-                <MenuItem Header="Status bar"></MenuItem>
-                <MenuItem Header="Word wrap"></MenuItem>
+                <MenuItem Header="Status bar" IsCheckable="True" IsChecked="True"></MenuItem>
+                <MenuItem Header="Word wrap" IsCheckable="True" IsChecked="True"></MenuItem>
             </MenuItem>
         </Menu>
         <!-- Body -->

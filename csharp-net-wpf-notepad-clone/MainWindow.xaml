@@ -67,14 +67,18 @@
                 <MenuItem Header="Word wrap" IsCheckable="True" IsChecked="True"></MenuItem>
             </MenuItem>
         </Menu>
-        s
+        
         <!-- Body -->
         <Rectangle Grid.Row="1" Fill="{StaticResource Body}"/>
         <TextBox Grid.Row="1"
                  Background="Transparent"
                  Padding="20"
                  Foreground="{StaticResource BodyText}"
-                 BorderThickness="0"></TextBox>
+                 BorderThickness="0"
+                 CaretBrush="White"
+                 FontSize="16"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"></TextBox>
         
         
         <!-- Footer -->

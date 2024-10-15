@@ -19,9 +19,46 @@
         <!-- Header -->
         <Rectangle Fill="{StaticResource HeaderFooter}"/>
         <!-- Menu -->
-        <Menu Background="Transparent" VerticalAlignment="Center" Foreground="{StaticResource HeaderFooterText}">
-            <MenuItem Header="File" Background="{StaticResource HeaderFooter}">
+        <Menu Background="Transparent"
+              VerticalAlignment="Center"
+              Foreground="{StaticResource HeaderFooterText}">
+            <MenuItem Header="File"
+                      Background="{StaticResource HeaderFooter}">
+                <MenuItem Header="New" InputGestureText="Ctrl+N"></MenuItem>
+                <MenuItem Header="New window" InputGestureText="Ctrl+Shift+N"></MenuItem>
+                <MenuItem Header="Open" InputGestureText="Ctrl+O"></MenuItem>
+                <MenuItem Header="Save" InputGestureText="Ctrl+S"></MenuItem>
+                <MenuItem Header="Save as" InputGestureText="Ctrl+Shift+S"></MenuItem>
+                <MenuItem Header="Page setup"></MenuItem>
+                <MenuItem Header="Print" InputGestureText="Ctrl+P"></MenuItem>
                 <MenuItem Header="Exit"></MenuItem>
+            </MenuItem>
+
+            <MenuItem Header="Edit"
+          Background="{StaticResource HeaderFooter}">
+                <MenuItem Header="Undo" InputGestureText="Ctrl+Z"></MenuItem>
+                <MenuItem Header="Cut" InputGestureText="Ctrl+X"></MenuItem>
+                <MenuItem Header="Copy" InputGestureText="Ctrl+C"></MenuItem>
+                <MenuItem Header="Paste" InputGestureText="Ctrl+V"></MenuItem>
+                <MenuItem Header="Delete" InputGestureText="Del"></MenuItem>
+                <MenuItem Header="Find" InputGestureText="Ctrl+F"></MenuItem>
+                <MenuItem Header="Find next" InputGestureText="F3"></MenuItem>
+                <MenuItem Header="Find previous" InputGestureText="Shift+F3"></MenuItem>
+                <MenuItem Header="Replace" InputGestureText="Ctrl+H"></MenuItem>
+                <MenuItem Header="Go to" InputGestureText="Ctrl+G"></MenuItem>
+                <MenuItem Header="Select all" InputGestureText="Ctrl+A"></MenuItem>
+                <MenuItem Header="Time/Date" InputGestureText="F5"></MenuItem>
+                <MenuItem Header="Font"></MenuItem>
+            </MenuItem>
+
+            <MenuItem Header="View"
+            Background="{StaticResource HeaderFooter}">
+                <MenuItem Header="Zoom">
+                    <MenuItem Header="Zoom+"></MenuItem>
+                    <MenuItem Header="Zoom-"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Status bar"></MenuItem>
+                <MenuItem Header="Word wrap"></MenuItem>
             </MenuItem>
         </Menu>
         <!-- Body -->

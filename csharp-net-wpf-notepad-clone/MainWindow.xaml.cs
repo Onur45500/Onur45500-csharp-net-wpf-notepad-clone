@@ -70,10 +70,38 @@ namespace csharp_net_wpf_notepad_clone
                 FileReader.Close();
             }
         }
+        
+        private void SaveDocument()
+        {
+            if(FilePath != "")
+            {
+                StreamWriter SaveFileStream = new StreamWriter(FilePath);
 
-        private void Open_MenuItem(object sender, RoutedEventArgs e)
+                DocumentContent = TextArea.Text;
+
+                SaveFileStream.Write(DocumentContent);
+
+                SaveFileStream.Close();
+            }
+            else
+            {
+                SaveAs();
+            }
+        }
+
+        private void SaveAs()
+        { 
+        
+        }
+
+        private void Open_MenuItem_Click(object sender, RoutedEventArgs e)
         {
             Open_FileDialog();
+        }
+
+        private void Save_MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            SaveDocument();
         }
     }
 }

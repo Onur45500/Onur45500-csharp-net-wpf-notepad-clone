@@ -26,8 +26,8 @@
                       Background="{StaticResource HeaderFooter}">
                 <MenuItem Header="New" InputGestureText="Ctrl+N"></MenuItem>
                 <MenuItem Header="New window" InputGestureText="Ctrl+Shift+N"></MenuItem>
-                <MenuItem Header="Open" InputGestureText="Ctrl+O" Click="Open_MenuItem"></MenuItem>
-                <MenuItem Header="Save" InputGestureText="Ctrl+S"></MenuItem>
+                <MenuItem x:Name="Open_MenuItem" Header="Open" InputGestureText="Ctrl+O" Click="Open_MenuItem_Click"></MenuItem>
+                <MenuItem x:Name="Save_MenuItem" Header="Save" InputGestureText="Ctrl+S" Click="Save_MenuItem_Click"></MenuItem>
                 <MenuItem Header="Save as" InputGestureText="Ctrl+Shift+S"></MenuItem>
                 <Separator/>
                 <MenuItem Header="Page setup"></MenuItem>

@@ -26,7 +26,7 @@
                       Background="{StaticResource HeaderFooter}">
                 <MenuItem Header="New" InputGestureText="Ctrl+N"></MenuItem>
                 <MenuItem Header="New window" InputGestureText="Ctrl+Shift+N"></MenuItem>
-                <MenuItem Header="Open" InputGestureText="Ctrl+O"></MenuItem>
+                <MenuItem Header="Open" InputGestureText="Ctrl+O" Click="Open_MenuItem"></MenuItem>
                 <MenuItem Header="Save" InputGestureText="Ctrl+S"></MenuItem>
                 <MenuItem Header="Save as" InputGestureText="Ctrl+Shift+S"></MenuItem>
                 <Separator/>
@@ -70,7 +70,7 @@
         
         <!-- Body -->
         <Rectangle Grid.Row="1" Fill="{StaticResource Body}"/>
-        <TextBox Grid.Row="1"
+        <TextBox x:Name="TextArea" Grid.Row="1"
                  Background="Transparent"
                  Padding="20"
                  Foreground="{StaticResource BodyText}"
@@ -78,7 +78,8 @@
                  CaretBrush="White"
                  FontSize="16"
                  AcceptsReturn="True"
-                 TextWrapping="Wrap"></TextBox>
+                 TextWrapping="Wrap"
+                 ></TextBox>
         
         
         <!-- Footer -->
